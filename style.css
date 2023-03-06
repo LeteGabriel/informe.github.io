@@ -16,10 +16,41 @@ div {
     justify-content: center;
 }
 
+#nuevodato {
+    display: flex;
+    font-size: 1.5em;
+    margin-left: 100px;
+    padding-left: 10px;
+    padding-bottom: 4px;
+    margin: 10px;
+    border: 1px solid #000;
+    width: fit-content;
+    background-color: rgb(247, 148, 29);
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+#wap {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-left: 45%;
+    border: none;
+}
+
+#wap:hover {
+    opacity: 0.5;
+}
+
 img {
     float: right;
     border: 2px solid #000;
     margin-right: 20px;
+}
+
+#comparte {
+    display: hidden;
 }
 
 h1 {
@@ -75,4 +106,8 @@ button {
     width: 20%;
     background-color: rgb(247, 148, 29);
     font-size: 2rem;
+}
+
+button:hover {
+box-shadow: 5px 5px 5px 1px rgba(100,50,0,0.75);
 }

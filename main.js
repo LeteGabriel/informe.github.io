@@ -1,3 +1,16 @@
+var boton = document.getElementById("copiador");
+boton.addEventListener("click", copiarAlPortapapeles, false);
+function copiarAlPortapapeles() {
+  var enlace = document.getElementById("nuevodato");
+  var inputFalso = document.createElement("input");
+  inputFalso.setAttribute("value", enlace.innerHTML);
+  document.body.appendChild(inputFalso);
+  inputFalso.select();
+  document.execCommand("copy");
+  document.body.removeChild(inputFalso);
+  alert("Copiado al portapapeles!");
+};
+
 document.getElementById('boton1').onclick = function(){
     let inicio = document.getElementById('ini').value;
     let fin = document.getElementById('fin').value;
@@ -15,5 +28,14 @@ document.getElementById('boton1').onclick = function(){
     let part4 = document.getElementById('part4').value;
     let puesto4 = document.getElementById('puesto4').value;
     
-    document.write("El " + fecha + " siendo las " + inicio + " en el barrio Nuestra señora de " + barrio + " se produce un evento de " + evento + " en el lote " + lote + ", el cual finalizo siendo las " + fin + " acudieron al evento los Sres " + part1 + " " + puesto1 + ", "  + ", " + part2 + " " + puesto2 + ", "  + part3 + " " + puesto3 + ", "  + part4 + " " + puesto4 + ". Se informo a " + informe + ".");
+    document.getElementById('datos').innerHTML = "";
+    document.getElementById('nuevodato').style.display = "block";
+    document.getElementById('copiador').style.display = "block";
+    document.getElementById('nuevodato').innerHTML = ("El " + fecha + " siendo las " + inicio + " en el barrio Nuestra señora de " + barrio + " se produce un evento de " + evento + " en el lote " + lote + ", el cual finalizo siendo las " + fin + " acudieron al evento los Sres " + part1 + " " + puesto1 + ", "  + ", " + part2 + " " + puesto2 + ", "  + part3 + " " + puesto3 + ", "  + part4 + " " + puesto4 + ". Se informo a " + informe + ".");
+    document.getElementById('comparte').style.display = "block";
+
+
+
+//    confirm("El " + fecha + " siendo las " + inicio + " en el barrio Nuestra señora de " + barrio + " se produce un evento de " + evento + " en el lote " + lote + ", el cual finalizo siendo las " + fin + " acudieron al evento los Sres " + part1 + " " + puesto1 + ", "  + ", " + part2 + " " + puesto2 + ", "  + part3 + " " + puesto3 + ", "  + part4 + " " + puesto4 + ". Se informo a " + informe + ".");
+   
 };
