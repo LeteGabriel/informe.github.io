@@ -12,8 +12,8 @@ document.getElementById('boton1').onclick = function(){
     let puesto2 = document.getElementById('puesto2').value;
     let part3 = document.getElementById('part3').value;
     let puesto3 = document.getElementById('puesto3').value;
-    let part4 = document.getElementById('part3').value;
-    let puesto4 = document.getElementById('puesto3').value;
+    let part4 = document.getElementById('part4').value;
+    let puesto4 = document.getElementById('puesto4').value;
     
     document.write("El " + fecha + " siendo las " + inicio + " en el barrio Nuestra señora de " + barrio + " se produce un evento de " + evento + " en el lote " + lote + ", el cual finalizo siendo las " + fin + " acudieron al evento los Sres " + part1 + " " + puesto1 + ", "  + ", " + part2 + " " + puesto2 + ", "  + part3 + " " + puesto3 + ", "  + part4 + " " + puesto4 + " se informo a " + informe + ".");
 };
